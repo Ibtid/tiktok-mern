@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Video from './Video';
+import video from './resources/production ID_4625522.mp4';
+import dodge from './resources/production ID_4058084.mp4';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='app__videos'>
+        <Video
+          url={video}
+          channel='ibtidrahman'
+          description='Soothing isnt it'
+          song='Oddessa'
+          likes={1203}
+          shares={20}
+          messages={121}
+        />
+        <Video
+          url={dodge}
+          channel='ibtidrahman'
+          description='My Little game'
+          song='kiddo'
+          likes={1203}
+          shares={20}
+          messages={121}
+        />
+      </div>
     </div>
   );
 }
